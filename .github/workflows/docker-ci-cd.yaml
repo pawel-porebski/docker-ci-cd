@@ -40,6 +40,7 @@ jobs:
       with:
           # Set build context as current (root) directory
           context: ./HealthCheckExampleApp
+          dockerfile: ./HealthCheckExampleApp/Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/aspnetcore-example:latest
